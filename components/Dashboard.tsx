@@ -5,7 +5,7 @@ import StatsCard from './StatsCard';
 import ReferenceTable from './ReferenceTable';
 import SimulationPanel from './SimulationPanel';
 import AdminCommuneEditor from './AdminCommuneEditor';
-import { Building2, Users, PieChart, Landmark, Map, Link as LinkIcon, AlertTriangle, CheckCircle, Sparkles, Database, ShieldCheck, BadgeCheck, Pencil, MapPinned } from 'lucide-react';
+import { Building2, Users, PieChart, Landmark, Map, Link as LinkIcon, AlertTriangle, CheckCircle, Sparkles, Database, ShieldCheck, BadgeCheck, Pencil, MapPinned, Euro } from 'lucide-react';
 import { getReferenceData } from '../data/referenceData';
 
 interface DashboardProps {
@@ -194,8 +194,8 @@ const Dashboard: React.FC<DashboardProps> = ({ data, epciForced, loadingStats, i
       {/* SECTION 2: Données Officielles (Tableaux codés en dur) */}
       <div className="w-full">
         <div className="flex items-center gap-2 mb-6">
-            <Database className="w-6 h-6 text-brand-600" />
-            <h3 className="text-2xl font-bold text-gray-900">Référentiel Officiel & Marges</h3>
+            <Euro className="w-6 h-6 text-brand-600" />
+            <h3 className="text-2xl font-bold text-gray-900">Marges Locales, Subventions & Prêts Bonifiés</h3>
             <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded border border-green-200 ml-2">Certifié</span>
         </div>
 
